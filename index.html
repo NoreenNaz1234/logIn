@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration FORM</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src=" https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="login">
+		
+     <div class="form">
+     	<form class="register">
+     		<input  required="" type="text" placeholder="Enter your name">
+     		<input  required="" type="text" placeholder="Enter your Password">
+     		<input required="" type="email" placeholder="Enter your email id">
+     		<button>Create</button>
+     		<p class="message">Already Registered?? <a href="#">Login</a></p>
+        </form>
+        <form class="logged">
+        	<input  required="" type="text" placeholder="User name">
+        	<input  required="" type="Password" placeholder="Password">
+        	<button  required="" class="btn">Login</button>
+        	<p class="message">Not Registered?? <a href="#">Register</a></p>
+
+        </form>
+     </div>
+
+
+
+
+
+
+	</div>
+
+<script>
+	
+	$('.message a').click(function(){
+	$('form').animate({height : "toggle" , opacity: "toggle"}, "slow");
+});
+</script>
+</body>
+</html>
